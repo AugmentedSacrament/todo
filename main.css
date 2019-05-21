@@ -1,0 +1,140 @@
+*,*::before, *::after{
+    font-size: 10px;
+    padding: 0;
+    margin:0;
+    list-style: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+.title{
+    color: rgb(31, 128, 255);
+    animation: 1s moveup ease-out;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.nav-item{
+    animation-name: moveleft;
+}
+.nav-item:nth-child(1){
+    animation-duration: 400ms;
+}
+.nav-item:nth-child(2){
+    animation-duration: 550ms;
+}
+.nav-item:nth-child(3){
+    animation-duration: 700ms;
+}
+
+.main-header>h1{
+    font-size: 5.5rem;
+    text-align: center;
+    margin-bottom: 5.6rem;
+}
+
+.wrapper{
+    margin: 0 10%;
+    padding: 1.5rem;
+    background: rgb(66, 132, 255);
+    height: auto;
+}
+
+.dispaly{
+    max-height: auto;
+}
+
+.display-items{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem;
+    color: rgb(65, 64, 64);
+}
+
+.item{
+        margin-left: 25%;
+        background: white;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: grey;
+        width: 50%;
+        border-radius: 5rem;
+}
+.btn{
+    color: rgb(31, 128, 255);
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    color: white;
+    background: rgb(32, 129, 255);
+}
+.add-btn{
+    top:1.5rem;
+    height: 2rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    background: rgb(32, 110, 255);
+    color: white;
+    border: none;
+}
+
+.form{
+    background: white;
+    margin-bottom: 3rem;
+}
+form>input{
+    position: relative;
+    top: 5px;
+    height: 4rem;
+    font-size: 3.8rem;
+    width: 100%;
+    display: block;
+}
+
+.complete{
+    background: rgb(19, 255, 19);
+}
+
+.incomplete{
+    background: rgb(240, 19, 19);
+}
+
+@keyframes moveup{
+    0%{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    50%{
+        opacity:.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes moveleft{
+    0%{
+        opacity:0;
+        transform: translateX(-5rem);
+    }
+
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

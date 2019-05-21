@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To do</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header. class="main-header">
+        <h1 class="title">To do App</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <button class="btn" onclick="GetList()">
+                        Get List
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn" onclick="Clear()">
+                        Clear List
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn" onclick="DarkMode()">
+                        DarkMode
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="app">
+        <div class="wrapper">
+            <form class="form" action="">
+                <input id="input" type="text">
+                <button id='btn-add' class="add-btn">
+                    add item
+                </button>
+            </form>
+            <div class="display">
+
+                <ul id="item-list" class="display-items">
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js">
+    </script>
+</body>
+</html>
